@@ -1,37 +1,44 @@
-# S.Honed
+# Honed — Open Source Website & Repo Polish Report
 
-**Simple name:** Honed
+**Honed** reads a URL or git repo and returns a scored **polish report**: headers, cookies, vendors, mail DNS, craft, and the next change to make. Drop a site. Leave with the brief.
 
-Drop a website or repo, get a polish report.
+[![License: MIT](https://img.shields.io/badge/License-MIT-stone.svg)](LICENSE)
 
-This is a Grok App Builder project. The sandbox npm name was `app-builder-workspace`. On GitHub it is **S.Honed** (private).
+## Features
 
-## Run on this Mac
+- Paste a website or repository
+- Scored report + polish plan
+- Checks headers, cookies, third-party vendors, and mail DNS
+- Shareable report links
+- Built for founders and agency QA
 
-Need **Node.js 22** and **npm**. Postgres is not required (uses PGLite in the browser/process).
+## Who it is for
+
+- Product teams before a launch
+- Agencies doing a **site audit**
+- Developers who want an open **Lighthouse-adjacent craft report** (not a Core Web Vitals clone)
+
+## Quick start
 
 ```bash
-cd "/Users/akshitpareta/Documents/S-projects/S.Honed"
+git clone https://github.com/Akshit1018/S.Honed.git
+cd S.Honed
 npm install
-npm run dev
-```
-
-Open http://127.0.0.1:8080
-
-To skip Grok login in local preview:
-
-```bash
 VITE_AUTH_ENABLED=false npm run dev
 ```
 
-Optional AI (only if this app calls Grok): set `XAI_API_KEY`.
+Open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-## Scripts
+Optional: `XAI_API_KEY` for richer write-ups.
 
-- `npm run dev` — Vite on port 8080
-- `npm run build` — production build + DB migrate (skipped without DATABASE_URL)
-- `npm run typecheck`
+## Tech stack
 
-## Notes
+React 19 · TanStack Start · Vite · Tailwind
 
-Do not commit `.env`, `node_modules`, or `.grok/`.
+## License
+
+[MIT](LICENSE)
+
+## Keywords
+
+website audit tool, repo polish report, security headers checker, mail DNS audit, open source site review, launch checklist
